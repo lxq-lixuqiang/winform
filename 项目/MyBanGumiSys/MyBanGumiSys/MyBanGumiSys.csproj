@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7EBC76F-30A8-4F9F-8091-4D21CFFDB30B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyBanGumiSys</RootNamespace>
+    <AssemblyName>MyBanGumiSys</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAnimeBiZi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimeBiZi.Designer.cs">
+      <DependentUpon>FrmAnimeBiZi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnimeImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimeImg.Designer.cs">
+      <DependentUpon>FrmAnimeImg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnimeMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimeMain.Designer.cs">
+      <DependentUpon>FrmAnimeMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaiXun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBaiXun.Designer.cs">
+      <DependentUpon>FrmBaiXun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChaXunAniam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChaXunAniam.Designer.cs">
+      <DependentUpon>FrmChaXunAniam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMyAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMyAnime.Designer.cs">
+      <DependentUpon>FrmMyAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewSelectUid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewSelectUid.Designer.cs">
+      <DependentUpon>FrmNewSelectUid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewAnime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewAnime.Designer.cs">
+      <DependentUpon>FrmNewAnime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXiangChuangKou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXiangChuangKou.Designer.cs">
+      <DependentUpon>FrmXiangChuangKou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZuCe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZuCe.Designer.cs">
+      <DependentUpon>FrmZuCe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDengLu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDengLu.Designer.cs">
+      <DependentUpon>FrmDengLu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGuanYuWoMen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuanYuWoMen.Designer.cs">
+      <DependentUpon>FrmGuanYuWoMen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gonggong.cs" />
+    <Compile Include="FrmUid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUid.designer.cs">
+      <DependentUpon>FrmUid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnimeGuanLi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimeGuanLi.designer.cs">
+      <DependentUpon>FrmAnimeGuanLi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnimeBiZi.resx">
+      <DependentUpon>FrmAnimeBiZi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnimeImg.resx">
+      <DependentUpon>FrmAnimeImg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnimeMain.resx">
+      <DependentUpon>FrmAnimeMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaiXun.resx">
+      <DependentUpon>FrmBaiXun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChaXunAniam.resx">
+      <DependentUpon>FrmChaXunAniam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMyAnime.resx">
+      <DependentUpon>FrmMyAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewSelectUid.resx">
+      <DependentUpon>FrmNewSelectUid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewAnime.resx">
+      <DependentUpon>FrmNewAnime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXiangChuangKou.resx">
+      <DependentUpon>FrmXiangChuangKou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZuCe.resx">
+      <DependentUpon>FrmZuCe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDengLu.resx">
+      <DependentUpon>FrmDengLu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuanYuWoMen.resx">
+      <DependentUpon>FrmGuanYuWoMen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUid.resx">
+      <DependentUpon>FrmUid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnimeGuanLi.resx">
+      <DependentUpon>FrmAnimeGuanLi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image 141.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
